@@ -27,6 +27,7 @@ public class SYSTE17796ICE1 {
 
         //calls out method and places array
         //average value is returned and printed
+                System.out.println("The max of the temperature is " + calcMax(temp2));
         System.out.println("The average of the temperature is " + calcAvg(temp2));
 
     }
@@ -55,10 +56,34 @@ public class SYSTE17796ICE1 {
 
         //returns sum and divided by 14 which  results in average of array
         return averageNumber / 14;
-
     }
+ //calculates max temp
+    public static int calcMax(int[] temp2) {
+
+        //max temp value
+        int tempMax = temp2[0];
+
+        //for loop calculates max temp
+        for (int val1 : temp2) {
+
+            //takes greatest value of temp and assigns it
+            if (val1 > tempMax) {
+                tempMax = val1;
+            }
+        }
+
+
+        //returns max value of temp
+        return tempMax;
+    }
+
+
+    //end of program
+
+    
 
    
 }
+
 
     //end of program
